@@ -1,0 +1,5 @@
+4
+AB001#Thuoc Ngu#Parmacy#Vien#25#Giup de ngu#
+T01HC#Thuoc tao bon#Nghia Trung#Nuoc#55#Tri tieu chay#
+DC345#Thuoc ho#Camada#Vien#30#Tri sot#
+T01GS#Thuoc tang can#DJT#Nuoc#100#Giup len can de dang#

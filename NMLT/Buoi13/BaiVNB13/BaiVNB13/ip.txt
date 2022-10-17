@@ -1,0 +1,29 @@
+7
+SA001
+Lap trinh co ban
+250.500
+11
+SA002
+Lap trinh huong doi tuong
+500.500
+15
+IT001
+Pascal co ban
+140
+0
+IT002
+Data Source
+800
+22
+NW003
+Information learning
+630.250
+34
+SB213
+Service Bio
+320
+0
+SA003
+Python co ban
+399
+35

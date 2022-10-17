@@ -1,0 +1,31 @@
+6
+IP6S001
+Iphone 6 plus
+Apple
+200
+3
+SSJ7001
+Samsung J7 Prime
+Samsung
+400
+6
+SSJ6002
+Samsung J6 Prime
+Samsung
+320.250
+11
+IPXMAX002
+Iphone XS MAX
+Apple
+1000.299
+13
+HWCN001
+Honor Play
+Huawei
+520.500
+4
+HWCN002
+Honor Mate
+Huawei
+700.210
+1

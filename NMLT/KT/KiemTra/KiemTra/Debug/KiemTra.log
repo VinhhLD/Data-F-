@@ -1,0 +1,3 @@
+﻿  12DH_NMLT_04_T3_1012_LuuDucVinh_2001210004_KT.cpp
+MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
+F:\NMLT\KT\KiemTra\Debug\KiemTra.exe : fatal error LNK1120: 1 unresolved externals

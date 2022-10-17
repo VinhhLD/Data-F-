@@ -1,0 +1,119 @@
+7
+ITELS001
+Ky nang giao tiep Tieng Anh
+21 3 2019
+Tran Phuc Thinh
+To Van Hien
+3
+ITE209001
+Nguyen Xuan Bui
+Ngon ngu anh
+2018 2021
+6
+7.5
+ITE209002
+Tran Ngo Thanh
+Ngon ngu anh
+2018 2022
+5
+6
+ITE209003
+Vo Minh Phuong
+QTKD
+2017 2020
+7
+7.6
+ITFL002
+Information Learning
+13 4 2021
+La Van Son
+Tran Dinh Tu
+2
+ITF201001
+Nguyen Bang Ha
+CNTT
+2020 2023
+3
+3.5
+ITF205002
+Le Dinh Khang
+Marketing
+2021 2024
+6
+6.5
+ELT003
+Dich vu ngan hang dien tu o VN
+5 7 2018
+Trinh Doan Ngan
+Ung Gia Tran
+1
+TMDT208001
+Trong Hoang Bao
+Thuong mai dien tu
+2017 2019
+4
+3.5
+LGT004
+Xuat khau ca phe Viet Nam
+24 3 2017
+Le Hoang Long
+Tran Gia An
+4
+LG207001
+Do Gia Toan
+Logistics
+2016 2019
+7
+6.3
+LG207002
+Hoang Tung Duong
+Logistics
+2016 2019
+7
+5
+LG207003
+Tran Bao Khuong
+CNTP
+2016 2019
+5.3
+8
+LG207004
+Luong Bang Phuoc
+CNTP
+2016 2019
+6
+7.3
+TOR005
+Thu hut khach du lich quoc te
+15 6 2021
+Vo Van Tung
+Tran Gia An
+2
+TOR201001
+Vo Cong Toan
+Du lich va Lu hanh
+2020 2023
+7
+6.7
+TOR201002
+Tran Bao Ngoc
+Du lich va Lu hanh
+2019 2022
+7
+7.6
+NNP006
+Tim hieu ve ngon ngu Pascal
+17 2 2018
+Trong Hoang Bao
+Tran Dinh Tu
+0
+MKT007
+Mat bao lau ban 1 ty goi me
+15 9 2021
+Ngo Trong Hoang
+To Van Hien
+0
+
+
+
+

@@ -1,0 +1,3 @@
+﻿  Bai23.5.cpp
+MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
+F:\THNMLT\Buoi2\BaiVNB2\Debug\BaiVNB2.exe : fatal error LNK1120: 1 unresolved externals

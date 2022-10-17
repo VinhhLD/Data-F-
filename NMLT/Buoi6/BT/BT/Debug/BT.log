@@ -1,0 +1,30 @@
+﻿Build started 11/22/2021 11:48:10 PM.
+     1>Project "F:\NMLT\Buoi6\BT\BT\BT.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Bai17.cpp
+         Bai17.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\NMLT\Buoi6\BT\Debug\BT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\NMLT\Buoi6\BT\Debug\BT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\NMLT\Buoi6\BT\Debug\BT.lib" /MACHINE:X86 Debug\Bai1.obj
+         Debug\Bai10.obj
+         Debug\Bai14.obj
+         Debug\Bai15.obj
+         Debug\Bai16.obj
+         Debug\Bai17.obj
+         Debug\Bai18.obj
+         Debug\Bai19.obj
+         Debug\Bai20.obj
+         Debug\Bai22.obj
+         Debug\Bai25.obj
+         Debug\Bai28.obj
+         Debug\Bai29.obj
+         Debug\Bai30.obj
+         Debug\Bai33.obj
+         Debug\Bai35.obj
+         Debug\Bai4.obj
+         Debug\Bai8.obj
+         BT.vcxproj -> F:\NMLT\Buoi6\BT\Debug\BT.exe
+     1>Done Building Project "F:\NMLT\Buoi6\BT\BT\BT.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.78
