@@ -1,0 +1,3 @@
+028 Quan1 TP.HCM 450 70
+061 DongNai TP.DongNai 235	45
+042 ThanhXuan HaNoi 300	20

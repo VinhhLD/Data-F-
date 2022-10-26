@@ -1,0 +1,11 @@
+﻿  Bai2Mayin_Main.cpp
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,33): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,61): warning C4305: 'initializing': truncation from 'int' to 'char'
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,33): warning C4309: 'initializing': truncation of constant value
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,39): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,39): warning C4309: 'initializing': truncation of constant value
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,45): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,45): warning C4309: 'initializing': truncation of constant value
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,51): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+F:\BT CTDL\Buoi6_CTDL_Queue\Buoi6_Queue\Bai2Mayin_Main.cpp(5,51): warning C4309: 'initializing': truncation of constant value
+  Buoi6_Queue.vcxproj -> F:\BT CTDL\Buoi6_CTDL_Queue\x64\Debug\Buoi6_Queue.exe

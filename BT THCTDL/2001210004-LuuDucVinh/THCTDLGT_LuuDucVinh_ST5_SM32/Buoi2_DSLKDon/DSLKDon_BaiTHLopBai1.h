@@ -27,7 +27,8 @@
 //void showSList(SList l);
 //void showMenu();
 //bool deletetHead(SList &l);
-//bool deleteTail(SList& l);
+//void deleteTail(SList& l);
+////bool deleteTail(SList& l);
 //bool deleteAfter(SList& l, Node* q);
 //Node* findSNode(SList l, ItemType x);
 //void deleteX(SList& l);

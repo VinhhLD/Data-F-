@@ -88,28 +88,47 @@
 //	}
 //	return true;
 //}
-//bool deleteTail(SList &l)
+//void deleteTail(SList& l)
 //{
-//	if (l.tail == NULL)
-//		return false;
-//	Node* p = l.head;
-//	Node* q = l.tail;
-//	if (p == q)
+//	if (l.head == NULL)
 //	{
-//		l.head = l.tail = NULL;
+//		return;
 //	}
 //	else
 //	{
-//		while (p->Next != q)
+//		Node* p = l.tail;
+//		Node* q = l.head;
+//		while (q->Next != l.tail)
 //		{
-//			p = p->Next;
+//			q = q->Next;
 //		}
-//		l.tail = p;
+//		l.tail = q;
 //		l.tail->Next = NULL;
+//		delete p;
 //	}
-//	delete q;
-//	return true;
 //}
+////bool deleteTail(SList &l)
+////{
+////	if (l.tail == NULL)
+////		return false;
+////	Node* p = l.head;
+////	Node* q = l.tail;
+////	if (p == q)
+////	{
+////		l.head = l.tail = NULL;
+////	}
+////	else
+////	{
+////		while (p->Next != q)
+////		{
+////			p = p->Next;
+////		}
+////		l.tail = p;
+////		l.tail->Next = NULL;
+////	}
+////	delete q;
+////	return true;
+////}
 //bool deleteAfter(SList &l, Node* q)
 //{
 //	if (q == NULL || q->Next == NULL) return false;
