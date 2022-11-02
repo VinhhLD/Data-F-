@@ -1,0 +1,5 @@
+﻿  KTL1_LuuDucVinh_2001210004.cpp
+  KTL1_LuuDucVinh_2001210004_Main.cpp
+F:\BT THCTDL\KTL1_LuuDucVinh_2001210004\KTL1_LuuDucVinh_2001210004\KTL1_LuuDucVinh_2001210004_Main.cpp(60,15): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'char *'
+  Generating Code...
+  KTL1_LuuDucVinh_2001210004.vcxproj -> F:\BT THCTDL\KTL1_LuuDucVinh_2001210004\Debug\KTL1_LuuDucVinh_2001210004.exe
