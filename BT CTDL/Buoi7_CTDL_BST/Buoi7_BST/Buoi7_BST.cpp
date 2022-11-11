@@ -102,15 +102,30 @@ int countTSNodeEven(TSNode* root)
 	}
 	return (nl + nr);
 }
-int TimPTAmMax(TSNode* root)
+TSNode* minTSNode(TSNode* root)
 {
-	if (root->Left == NULL)
+	TSNode* p = root;
+	while (p->Left != NULL)
 	{
+		p = p->Left;
+	}
+	return p;
+}
+TSNode* TimPTAmMax(TSNode* root)
+{
+	TSNode* min = minTSNode(root);
+	if (min >= 0) return NULL;
+	else
+	{
+		TSNode* p = root;
 		if (root->Info >= 0)
 		{
-			return 0;
+			root = root->Left;
+			if (p != NULL && p->Left->Info < 0)
+			{
+				p = p->Left;
+			}
 		}
-		return root->Info;
 	}
-	return TimPTAmMax(root->Left);
+	
 }

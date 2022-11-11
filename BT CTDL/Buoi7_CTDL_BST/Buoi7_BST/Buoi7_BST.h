@@ -24,5 +24,5 @@ void createBSTree_Auto(BSTree& bst);
 void showMenu();
 void createBSTree_Array(BSTree& bst, int a[]);
 int countTSNodeEven(TSNode* root);
-int TimPTAmMax(TSNode* root);
+TSNode* TimPTAmMax(TSNode* root);
 #endif
