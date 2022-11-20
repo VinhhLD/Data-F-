@@ -419,3 +419,239 @@ void showMenu2()
 	printf("1. Tao cay PS Auto\n");
 	printf("2. Xuat cay PS NLR\n");
 }
+void showMenu3()
+{
+	printf("1.Xuat cac so hoan thien trong cay\n");
+	printf("2.Xuat cac nut tren tang thu k cua cay\n");
+	printf("3.Xuat cac nut tren cay theo thu tu tang 0 den tang h - 1 cua cay\n");
+	printf("4.Dem so luong nut la co gia tri chan\n");
+	printf("5.Dem so luong nut co dung 1 con va la SNT trong cay\n");
+	printf("6.Dem so luong nut co dung 2 con va la SCP trong cay\n");
+	printf("7.Dem so luong nut nam o tang thap hon tang k trong cay\n");
+	printf("8.Dem so luong nut nam o tang cao hon tang k trong cay\n");
+	printf("9.Tinh tong cac nut le\n");
+	printf("10.Tinh tong cac nut la co gia tri chan\n");
+	printf("11.Tong cac nut co dung 1 con va la SNT trong cay\n");
+	printf("12.Tong cac nut co dung 2 con va la SCP trong cay\n");
+}
+void SHT(TSNode* root)
+{
+	int sum = 0;
+	if (root == NULL)
+	{
+		return;
+	}
+	if (root->Info <= 0)
+	{
+		return;
+	}
+	else
+	{
+		for (int i = 1; i < root->Info; i++)
+		{
+			if (root->Info % i == 0)
+			{
+				sum += i;
+			}
+		}
+		if (sum == root->Info)
+		{
+			showTSNode(root);
+		}
+		SHT(root->Left);
+		SHT(root->Right);
+	}
+}
+void showTSNodeLevelK(TSNode* root, int k)
+{
+	if (root == NULL) return;
+	if (k == 0)
+	{
+		showTSNode(root);
+	}
+	k--;
+	showTSNodeLevelK(root->Left, k);
+	showTSNodeLevelK(root->Right, k);
+}
+int CountTSNodeLevelK(TSNode* root, int k)
+{
+	if (root == NULL) return 0;
+	if (k == 0)
+	{
+		return 1;
+	}
+	k--;
+	int nl = CountTSNodeLevelK(root->Left, k);
+	int nr = CountTSNodeLevelK(root->Right, k);
+	return nl + nr;
+}
+int DemTangThapHonK(TSNode* root, int k)
+{
+	if (root != NULL)
+	{
+		int dem = 0;
+		for (int i = 0; i < k; i++)
+		{
+			dem += CountTSNodeLevelK(root, i);
+		}
+		return dem;
+	}
+	return 0;
+}
+int DemTangCaoHonK(TSNode* root, int k)
+{
+	if (root != NULL)
+	{
+		int dem = 0;
+		for (int i = k + 1; i <= hightBSTree(root); i++)
+		{
+			dem += CountTSNodeLevelK(root, i);
+		}
+		return dem;
+	}
+	return 0;
+}
+int hightBSTree(TSNode* root)
+{
+	if (root == NULL)
+		return 0;
+	int hl = hightBSTree(root->Left);
+	int hr = hightBSTree(root->Right);
+	if (hl > hr)
+	{
+		return (1 + hl);
+	}
+	return (1 + hr);
+}
+int CountTSNodeIsLeafEven(TSNode* root, int &count)
+{
+	if (root == NULL)
+		return 0;
+	int nl = CountTSNodeIsLeafEven(root->Left, count);
+	int nr = CountTSNodeIsLeafEven(root->Right, count);
+	if (root->Info % 2 == 0 && root->Left == NULL && root->Right == NULL)
+	{
+		count++;
+	}
+	return count;
+}
+bool SNT(TSNode *root)
+{
+	if (root->Info < 2)
+	{
+		return false;
+	}
+	else
+	{
+		int count = 1;
+		for (int i = 2; i <= sqrt(root->Info); i++)
+		{
+			if (root->Info % i == 0)
+			{
+				count = 0;
+				break;
+			}
+		}
+		if (count == 1 && (root->Left != NULL && root->Right == NULL || root->Left == NULL && root->Right != NULL))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+int CountTSNodeHave1ChildIsSNT(TSNode* root, int &dem)
+{
+	if (root != NULL)
+	{
+		if (SNT(root) == true)
+		{
+			dem++;
+		}
+		CountTSNodeHave1ChildIsSNT(root->Left, dem);
+		CountTSNodeHave1ChildIsSNT(root->Right, dem);
+	}
+	return dem;
+}
+int SumTSNodeHave1ChildIsSNT(TSNode* root, int& dem)
+{
+	if (root != NULL)
+	{
+		if (SNT(root) == true)
+		{
+			dem += root->Info;
+		}
+		SumTSNodeHave1ChildIsSNT(root->Left, dem);
+		SumTSNodeHave1ChildIsSNT(root->Right, dem);
+	}
+	return dem;
+}
+bool SCP(TSNode* root)
+{
+	if (root->Info < 0)
+	{
+		return false;
+	}
+	if (root->Left == NULL || root->Right == NULL)
+	{
+		return false;
+	}
+	else
+	{
+		if (sqrt((float)root->Info) == (int)sqrt((float)root->Info) && root->Left != NULL && root->Right != NULL)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+int CountTSNodeHave2ChildIsSCP(TSNode* root, int &dem)
+{
+	if (root != NULL)
+	{
+		if (SCP(root) == true)
+		{
+			dem++;
+		}
+		CountTSNodeHave2ChildIsSCP(root->Left, dem);
+		CountTSNodeHave2ChildIsSCP(root->Right, dem);
+	}
+	return dem;
+}
+int SumTSNodeHave2ChildIsSCP(TSNode* root, int& dem)
+{
+	if (root != NULL)
+	{
+		if (SCP(root) == true)
+		{
+			dem += root->Info;
+		}
+		SumTSNodeHave2ChildIsSCP(root->Left, dem);
+		SumTSNodeHave2ChildIsSCP(root->Right, dem);
+	}
+	return dem;
+}
+int SumTSNodeOdd(TSNode* root)
+{
+	if (root == NULL)
+		return 0;
+	int rootNode = root->Info;
+	int nl = SumTSNodeOdd(root->Left);
+	int nr = SumTSNodeOdd(root->Right);
+	if (root->Info % 2 != 0 && rootNode % 2 != 0)
+	{
+		return (rootNode + nl + nr);
+	}
+	return (nl + nr);
+}
+int SumTSNodeIsLeafEven(TSNode* root)
+{
+	if (root == NULL)
+		return 0;
+	int nl = SumTSNodeIsLeafEven(root->Left);
+	int nr = SumTSNodeIsLeafEven(root->Right);
+	if (root->Info % 2 == 0 && root->Left == NULL && root->Right == NULL)
+	{
+		return (root->Info + nl + nr);
+	}
+	return (nl + nr);
+}

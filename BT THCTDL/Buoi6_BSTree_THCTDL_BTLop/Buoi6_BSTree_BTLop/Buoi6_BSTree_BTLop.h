@@ -7,6 +7,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <queue>
+#include <math.h>
 using namespace std;
 struct PS
 {
@@ -64,4 +65,20 @@ void createBSTreePS_Auto(BSTreePS& bstPS);
 void showTSNodePS(TSNodePS *root);
 void NLRPS(TSNodePS* root);
 void showMenu2();
+void showMenu3();
+void SHT(TSNode* root);
+bool SNT(TSNode* root);
+void showTSNodeLevelK(TSNode* root, int k);
+int hightBSTree(TSNode* root);
+int CountTSNodeIsLeafEven(TSNode* root, int& count);
+int CountTSNodeHave1ChildIsSNT(TSNode* root, int &dem);
+bool SCP(TSNode* root);
+int CountTSNodeHave2ChildIsSCP(TSNode* root, int &dem);
+int CountTSNodeLevelK(TSNode* root, int k);
+int DemTangThapHonK(TSNode* root, int k);
+int DemTangCaoHonK(TSNode* root, int k);
+int SumTSNodeOdd(TSNode* root);
+int SumTSNodeIsLeafEven(TSNode* root);
+int SumTSNodeHave1ChildIsSNT(TSNode* root, int& dem);
+int SumTSNodeHave2ChildIsSCP(TSNode* root, int& dem);
 #endif
