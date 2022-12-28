@@ -1,0 +1,6 @@
+VY01 QuaiCaChuong 100 23
+VY02 YesuaChacChan 150 35
+03VY aHa 200 20
+s004 Dia 90 34
+s005 Su 130 50
+Vinh VinhYet 69	699

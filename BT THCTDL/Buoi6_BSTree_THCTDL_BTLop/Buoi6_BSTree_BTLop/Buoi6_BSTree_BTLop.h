@@ -81,4 +81,5 @@ int SumTSNodeOdd(TSNode* root);
 int SumTSNodeIsLeafEven(TSNode* root);
 int SumTSNodeHave1ChildIsSNT(TSNode* root, int& dem);
 int SumTSNodeHave2ChildIsSCP(TSNode* root, int& dem);
+int CountBTNodeHave2Child(TSNode* root);
 #endif

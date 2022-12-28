@@ -655,3 +655,17 @@ int SumTSNodeIsLeafEven(TSNode* root)
 	}
 	return (nl + nr);
 }
+int CountBTNodeHave2Child(TSNode* root)
+{
+	if (root == NULL)
+	{
+		return 0;
+	}
+	int nl = CountBTNodeHave2Child(root->Left);
+	int nr = CountBTNodeHave2Child(root->Right);
+	if ((root->Left && root->Right) != NULL)
+	{
+		return (1 + nl + nr);
+	}
+	return nl + nr;
+}

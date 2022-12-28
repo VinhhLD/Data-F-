@@ -255,6 +255,10 @@ int main()
 					printf("Tong gia tri cac nut co 2 con va la SCP trong cay la: %d\n", SumTSNodeHave2ChildIsSCP(bst.Root, dem));
 					break;
 				}
+				case 13:
+				{
+					printf("Tong so nut co 2 con trong cay la: %d\n", CountBTNodeHave2Child(bst.Root));
+				}
 				}
 			} while (choose != 0);
 			break;
